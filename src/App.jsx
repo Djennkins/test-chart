@@ -47,7 +47,7 @@ function App() {
 	return (
 		<div className=" flex flex-col items-center my-5 gap-5">
 			<input type="file" accept=".csv" onChange={handleFileUpload} />
-			<div className="  w-[700px] h-[700px] ">
+			<div className=" w-[280px] h-[280px] sm:w-[600px] sm:h-[600px] 2xl:w-[800px] 2xl:h-[800px]">
 				{(stats.lost > 0 || stats.won > 0 || stats.open > 0) && <Pie data={doughnutData} options={options} />}
 			</div>
 		</div>
